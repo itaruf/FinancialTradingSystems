@@ -8,8 +8,8 @@
 #include <memory>
 #include <set>
 #include <unordered_map>
-#include <unordered_map>
 
+// Class that manages orders with the same symbol (e.g. CAC40) and stores them in the corresponding side (Buy or Sell)
 class OrderBook
 {
 private:
