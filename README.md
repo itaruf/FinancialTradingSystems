@@ -56,7 +56,7 @@
  <ul style="text-align: justify;">
  <li>Order Book
  <ul>
-   <li>Class that manages orders with the same symbol (e.g. CAC40) and stores them in the corresponding side (Buy or Sell)</li>
+   <li>Class that manages orders with the same symbol (e.g. CAC40) and stores them in their corresponding side</li>
    <li>All operations (insert, pull, amend, match, generate trade) are defined here</li>
    <li>Orders are sorted by price, and if equal, by time priority. The most attractive prices and the first inserted orders are at the top of the search</li>
    <ul>
@@ -73,7 +73,7 @@
  <ul style="text-align: justify;">
  <li>Trade
   <ul>
-  <li>Class that handles the trade between 2 orders and store the exchange data</li>
+  <li>Class that handles the trade between 2 orders and stores the data from the exchange</li>
   </ul>
  </li>
  </ul>
@@ -91,12 +91,12 @@
 <ul style="text-align: justify;">
 <li>Test Cases
  <ul>
-  <li>insert order -> succesfully builds the order, creates an order book and stores the new order in it</li>
+  <li>insert order -> successfully builds the order, creates an order book and stores the new order in it</li>
   <li>aggressive sell order -> looks for a matching buy order</li>
   <li>aggressive buy order -> looks for a matching sell order</li>
-  <li>multiple same symbol insert and multiple match -> checks for matching sell / buy orders, remove the fulfilled orders</li>
+  <li>multiple same symbol insert and multiple match -> checks for matching sell / buy orders, and removes the fulfilled orders</li>
   <li>multiple symbol insert -> checks for order creation and storing in the corresponding order book + ^</li>
-  <li>amend order -> searches for the order to amend, depending on the criteria, reajust timestamps and resort orders if needeed + ^</li>
+  <li>amend order -> searches for the order to amend, depending on the criteria, readjusts timestamps and sorts orders if needed + ^</li>
  </ul>
 </li>
 </ul>
