@@ -23,7 +23,7 @@
 <!-- TechStack -->
 ### :space_invader: Tech stack
 
-  - **Programming Language**: C++
+  - **Programming language**: C++
   - **IDE**: Visual Studio Community 2022
   - **Version control**: Git
 
@@ -58,11 +58,11 @@
     -   std::vector stores the generated trades linearly, keeping the chronology by default insertion after insertion
 - Trade
   - Class that handles the trade between 2 orders and store the exchange data
-- Matching engine
+- Matching Engine
   - Class managing multiple central limit order books. 
   - Each order book corresponds to one symbol (e.g. CAC40) in order to manage them independently from one another
     - std::unordered_map stores order books by name (unique) and allows direct insertion (0(1)) and access (0(1)) to them
-- Test cases
+- Test Cases
   - insert order -> succesfully builds the order to store, creates an order book and stores it in it  
   - aggressive sell order -> looks for a matching buy order
   - aggressive buy order -> looks for a matching sell order
